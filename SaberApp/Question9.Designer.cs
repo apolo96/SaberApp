@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
@@ -43,6 +44,8 @@
             this.cbR2 = new System.Windows.Forms.ComboBox();
             this.cbR3 = new System.Windows.Forms.ComboBox();
             this.cbR4 = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // materialLabel8
@@ -266,11 +269,27 @@
             this.cbR4.Size = new System.Drawing.Size(240, 26);
             this.cbR4.TabIndex = 43;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lbTime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lbTime.Location = new System.Drawing.Point(12, 355);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(0, 16);
+            this.lbTime.TabIndex = 44;
+            // 
             // Question9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 380);
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.cbR4);
             this.Controls.Add(this.cbR3);
             this.Controls.Add(this.cbR2);
@@ -312,5 +331,7 @@
         private System.Windows.Forms.ComboBox cbR2;
         private System.Windows.Forms.ComboBox cbR3;
         private System.Windows.Forms.ComboBox cbR4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbTime;
     }
 }

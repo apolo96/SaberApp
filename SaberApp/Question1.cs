@@ -62,6 +62,7 @@ namespace SaberApp
                     Questions.incorrectas++;
                 }
                 this.Hide();
+                timer1.Enabled = false;
                 new Question2().Show();
             }
             
@@ -69,7 +70,14 @@ namespace SaberApp
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Tiempo.run();
+            lbTime.Text = Tiempo.getTiempo();
+        }
+
+        private void Question1_Shown(object sender, EventArgs e)
+        {
             timer1.Enabled = true;
+            timer1.Interval = 1000;
         }
     }
 }

@@ -35,6 +35,7 @@
             this.txtTrasnlate = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +98,23 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lbTime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lbTime.Location = new System.Drawing.Point(12, 271);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(0, 16);
+            this.lbTime.TabIndex = 5;
+            // 
             // Question1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 296);
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTrasnlate);
             this.Controls.Add(this.materialLabel1);
@@ -110,6 +123,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Question Number One";
             this.Load += new System.EventHandler(this.Question1_Load);
+            this.Shown += new System.EventHandler(this.Question1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,5 +137,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTrasnlate;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbTime;
     }
 }

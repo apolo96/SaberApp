@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cbR1 = new System.Windows.Forms.ComboBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.btnNext = new MaterialSkin.Controls.MaterialFlatButton();
@@ -42,6 +43,8 @@
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbR1
@@ -253,11 +256,27 @@
             this.materialLabel9.TabIndex = 26;
             this.materialLabel9.Text = "How are you ?";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lbTime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lbTime.Location = new System.Drawing.Point(12, 355);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(0, 16);
+            this.lbTime.TabIndex = 27;
+            // 
             // Question3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 380);
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.materialLabel9);
             this.Controls.Add(this.materialLabel8);
             this.Controls.Add(this.materialLabel7);
@@ -296,5 +315,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbTime;
     }
 }

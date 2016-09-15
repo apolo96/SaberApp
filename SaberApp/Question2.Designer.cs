@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Question2));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rbAir = new MaterialSkin.Controls.MaterialRadioButton();
@@ -39,6 +40,8 @@
             this.rbBall = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbCar = new MaterialSkin.Controls.MaterialRadioButton();
             this.btnNext = new MaterialSkin.Controls.MaterialFlatButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -178,11 +181,27 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lbTime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lbTime.Location = new System.Drawing.Point(12, 415);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(0, 16);
+            this.lbTime.TabIndex = 12;
+            // 
             // Question2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 440);
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.rbCar);
             this.Controls.Add(this.rbBall);
@@ -217,5 +236,7 @@
         private MaterialSkin.Controls.MaterialRadioButton rbBall;
         private MaterialSkin.Controls.MaterialRadioButton rbCar;
         private MaterialSkin.Controls.MaterialFlatButton btnNext;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbTime;
     }
 }

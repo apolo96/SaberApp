@@ -26,7 +26,8 @@ namespace SaberApp
 
         private void Question7_Load(object sender, EventArgs e)
         {
-
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -43,8 +44,15 @@ namespace SaberApp
                     Questions.setAnswer(1, false);
                 }
                 this.Hide();
-                new Question7().Show();
+                timer1.Enabled = false;
+                new Question8().Show();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Tiempo.run();
+            lbTime.Text = Tiempo.getTiempo();
         }
     }
 }

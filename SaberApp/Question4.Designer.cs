@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnNext = new MaterialSkin.Controls.MaterialFlatButton();
             this.lsEn = new System.Windows.Forms.ListBox();
             this.lbR1 = new MaterialSkin.Controls.MaterialLabel();
@@ -38,6 +39,8 @@
             this.lbR5 = new MaterialSkin.Controls.MaterialLabel();
             this.lbR6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnNext
@@ -193,11 +196,27 @@
             this.materialLabel5.TabIndex = 28;
             this.materialLabel5.Text = "Arrastra las horaciones sobre la caja";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lbTime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lbTime.Location = new System.Drawing.Point(12, 388);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(0, 16);
+            this.lbTime.TabIndex = 29;
+            // 
             // Question4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 413);
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.lbR6);
             this.Controls.Add(this.lbR5);
@@ -229,5 +248,7 @@
         private MaterialSkin.Controls.MaterialLabel lbR5;
         private MaterialSkin.Controls.MaterialLabel lbR6;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbTime;
     }
 }

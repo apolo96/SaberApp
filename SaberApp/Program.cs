@@ -16,7 +16,7 @@ namespace SaberApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Question10());
+            Application.Run(new Question1());
         }
     }
 }

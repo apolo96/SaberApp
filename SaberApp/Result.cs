@@ -26,6 +26,12 @@ namespace SaberApp
 
         private void Result_Load(object sender, EventArgs e)
         {
+            lbNombre.Text = Usuarios.name;
+            lbApellido.Text = Usuarios.lastName;
+            lbID.Text = Usuarios.nID;
+            lbTiempo.Text = Tiempo.getTiempo();
+            lbOk.Text = Questions.correctas.ToString();
+            lbNot.Text = Questions.incorrectas.ToString();
 
         }
     }

@@ -27,7 +27,8 @@ namespace SaberApp
 
         private void Question4_Load(object sender, EventArgs e)
         {
-
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
         }
 
         private void lbR1_MouseDown(object sender, MouseEventArgs e)
@@ -145,8 +146,15 @@ namespace SaberApp
                     Questions.setAnswer(3,false);
                 }
                 this.Hide();
+                timer1.Enabled = false;
                 new Question5().Show();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Tiempo.run();
+            lbTime.Text = Tiempo.getTiempo();
         }
     }
 }

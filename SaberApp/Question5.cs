@@ -29,7 +29,8 @@ namespace SaberApp
 
         private void Question5_Load(object sender, EventArgs e)
         {
-
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -62,9 +63,16 @@ namespace SaberApp
                     Questions.incorrectas++;
                 }
                 this.Hide();
+                timer1.Enabled = false;
                 new Question6().Show();
             }
            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Tiempo.run();
+            lbTime.Text = Tiempo.getTiempo();
         }
     }
 }

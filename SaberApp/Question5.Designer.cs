@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Question5));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtTrasnlate = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.btnNext = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,11 +108,27 @@
             this.materialLabel2.TabIndex = 9;
             this.materialLabel2.Text = "I don\'t understand";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lbTime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lbTime.Location = new System.Drawing.Point(12, 268);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(0, 16);
+            this.lbTime.TabIndex = 10;
+            // 
             // Question5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 293);
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTrasnlate);
@@ -132,5 +151,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialFlatButton btnNext;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbTime;
     }
 }
