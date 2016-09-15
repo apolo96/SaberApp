@@ -46,5 +46,50 @@ namespace SaberApp
                 new Question7().Show();
             }
         }
+
+        private void rbFire_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbOld_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbPolice_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbBoy_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace SaberApp
 {
-    public partial class Question7 : MaterialForm
+    public partial class Question10 : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
-        public Question7()
+        public Question10()
         {
             InitializeComponent();
             materialSkinManager = MaterialSkinManager.Instance;
@@ -24,16 +24,16 @@ namespace SaberApp
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-        private void Question7_Load(object sender, EventArgs e)
+        private void Question10_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (rbSnake.Checked || rbLion.Checked || rbRhino.Checked || rbDolphi.Checked)
+            if (rbVolcano.Checked || rbDesert.Checked || rbSnowy.Checked || rbRiver.Checked)
             {
-                if (rbDolphi.Checked)
+                if (rbRiver.Checked)
                 {
                     Questions.correctas++;
                 }
@@ -43,7 +43,7 @@ namespace SaberApp
                     Questions.setAnswer(1, false);
                 }
                 this.Hide();
-                new Question7().Show();
+                new Result().Show();
             }
         }
     }

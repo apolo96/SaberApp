@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace SaberApp
 {
-    public partial class Question7 : MaterialForm
+    public partial class Question9 : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
-        public Question7()
+        public Question9()
         {
             InitializeComponent();
             materialSkinManager = MaterialSkinManager.Instance;
@@ -24,26 +24,29 @@ namespace SaberApp
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-        private void Question7_Load(object sender, EventArgs e)
+        private void Question9_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (rbSnake.Checked || rbLion.Checked || rbRhino.Checked || rbDolphi.Checked)
+            bool verify = cbR1.SelectedIndex == -1 || cbR2.SelectedIndex == -1 ||
+                cbR3.SelectedIndex == -1 || cbR4.SelectedIndex == -1;
+            if (verify != true)
             {
-                if (rbDolphi.Checked)
+                bool x = cbR1.SelectedIndex == 3 && cbR2.SelectedIndex == 0 && cbR3.SelectedIndex == 1 && cbR4.SelectedIndex == 3;
+                if (x == true)
                 {
                     Questions.correctas++;
                 }
                 else
                 {
                     Questions.incorrectas++;
-                    Questions.setAnswer(1, false);
+                    Questions.setAnswer(2, false);
                 }
                 this.Hide();
-                new Question7().Show();
+                new Question10().Show();
             }
         }
     }
