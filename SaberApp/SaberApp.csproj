@@ -94,6 +94,12 @@
     <Compile Include="Question5.Designer.cs">
       <DependentUpon>Question5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question6.Designer.cs">
+      <DependentUpon>Question6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Questions.cs" />
     <Compile Include="Usuarios.cs" />
     <EmbeddedResource Include="Login.resx">
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Question4.resx">
       <DependentUpon>Question4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question5.resx">
+      <DependentUpon>Question5.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

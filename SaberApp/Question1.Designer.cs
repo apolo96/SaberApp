@@ -68,7 +68,7 @@
             // txtTrasnlate
             // 
             this.txtTrasnlate.Depth = 0;
-            this.txtTrasnlate.Hint = "Traduccion";
+            this.txtTrasnlate.Hint = "English Text";
             this.txtTrasnlate.Location = new System.Drawing.Point(144, 173);
             this.txtTrasnlate.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTrasnlate.Name = "txtTrasnlate";

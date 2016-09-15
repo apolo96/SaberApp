@@ -46,19 +46,25 @@ namespace SaberApp
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            string traduccion = txtTrasnlate.Text.Trim();
-            traduccion = traduccion.Replace(" ","");
-            MessageBox.Show(traduccion);
-            if (traduccion.Equals("thanksverymuch"))
+            string en = txtTrasnlate.Text.Trim();
+            en = en.Replace(" ","");
+            if (en.Equals(""))
             {
-                Questions.correctas++;
             }
             else {
-                Questions.setAnswer(0,false);
-                Questions.incorrectas++;
+                if (en.Equals("thanksverymuch"))
+                {
+                    Questions.correctas++;
+                }
+                else
+                {
+                    Questions.setAnswer(0, false);
+                    Questions.incorrectas++;
+                }
+                this.Hide();
+                new Question2().Show();
             }
-            this.Hide();
-            new Question2().Show();
+            
         }
     }
 }
