@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +12,39 @@ using System.Windows.Forms;
 
 namespace SaberApp
 {
-    public partial class Question6 : Form
+    public partial class Question6 : MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
         public Question6()
         {
             InitializeComponent();
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+        }
+
+        private void Question6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (rbBoy.Checked || rbPolice.Checked || rbFire.Checked || rbOld.Checked)
+            {
+                if (rbFire.Checked)
+                {
+                    Questions.correctas++;
+                }
+                else
+                {
+                    Questions.incorrectas++;
+                    Questions.setAnswer(1, false);
+                }
+                this.Hide();
+                new Question7().Show();
+            }
         }
     }
 }

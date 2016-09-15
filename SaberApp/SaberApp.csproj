@@ -100,6 +100,12 @@
     <Compile Include="Question6.Designer.cs">
       <DependentUpon>Question6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question7.Designer.cs">
+      <DependentUpon>Question7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Questions.cs" />
     <Compile Include="Usuarios.cs" />
     <EmbeddedResource Include="Login.resx">
@@ -131,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Question5.resx">
       <DependentUpon>Question5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question6.resx">
+      <DependentUpon>Question6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question7.resx">
+      <DependentUpon>Question7.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
