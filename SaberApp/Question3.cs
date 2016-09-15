@@ -43,6 +43,7 @@ namespace SaberApp
                     Questions.setAnswer(2,false);
                 }
                 this.Hide();
+                new Question4().Show();
             }
         }
     }
