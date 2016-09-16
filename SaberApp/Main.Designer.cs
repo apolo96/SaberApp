@@ -74,7 +74,7 @@
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Primary = true;
             this.btnSignUp.Size = new System.Drawing.Size(107, 30);
-            this.btnSignUp.TabIndex = 2;
+            this.btnSignUp.TabIndex = 4;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = true;
             this.btnSignUp.Click += new System.EventHandler(this.materialRaisedButton1_Click);
@@ -91,7 +91,7 @@
             this.txtID.SelectionLength = 0;
             this.txtID.SelectionStart = 0;
             this.txtID.Size = new System.Drawing.Size(259, 23);
-            this.txtID.TabIndex = 3;
+            this.txtID.TabIndex = 2;
             this.txtID.UseSystemPasswordChar = false;
             // 
             // txtPw
@@ -106,7 +106,7 @@
             this.txtPw.SelectionLength = 0;
             this.txtPw.SelectionStart = 0;
             this.txtPw.Size = new System.Drawing.Size(259, 23);
-            this.txtPw.TabIndex = 4;
+            this.txtPw.TabIndex = 3;
             this.txtPw.UseSystemPasswordChar = false;
             // 
             // lbAlert

@@ -58,7 +58,7 @@
             this.txtUserName.SelectionLength = 0;
             this.txtUserName.SelectionStart = 0;
             this.txtUserName.Size = new System.Drawing.Size(243, 23);
-            this.txtUserName.TabIndex = 3;
+            this.txtUserName.TabIndex = 0;
             this.txtUserName.UseSystemPasswordChar = false;
             // 
             // txtPass
@@ -73,7 +73,7 @@
             this.txtPass.SelectionLength = 0;
             this.txtPass.SelectionStart = 0;
             this.txtPass.Size = new System.Drawing.Size(243, 23);
-            this.txtPass.TabIndex = 4;
+            this.txtPass.TabIndex = 1;
             this.txtPass.UseSystemPasswordChar = false;
             // 
             // Login

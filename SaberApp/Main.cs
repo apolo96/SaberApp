@@ -32,7 +32,7 @@ namespace SaberApp
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             string name = txtName.Text.Trim();
-            string lastName = txtName.Text.Trim();
+            string lastName = txtLastName.Text.Trim();
             string ID = txtID.Text.Trim();
             string password = txtPw.Text.Trim();
             if (name.Equals("") || lastName.Equals("") || ID.Equals("") || password.Equals(""))

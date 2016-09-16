@@ -41,7 +41,7 @@ namespace SaberApp
                 else
                 {
                     Questions.incorrectas++;
-                    Questions.setAnswer(1, false);
+                    Questions.setAnswer(9, false);
                 }
                 this.Hide();
                 timer1.Enabled = false;

@@ -59,7 +59,7 @@ namespace SaberApp
                 }
                 else
                 {
-                    Questions.setAnswer(0, false);
+                    Questions.setAnswer(4, false);
                     Questions.incorrectas++;
                 }
                 this.Hide();

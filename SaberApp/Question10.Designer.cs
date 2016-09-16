@@ -151,9 +151,9 @@
             this.materialLabel1.Location = new System.Drawing.Point(53, 79);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(309, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(293, 19);
             this.materialLabel1.TabIndex = 14;
-            this.materialLabel1.Text = "Selecione la imagen correspondiente \"Avion\"";
+            this.materialLabel1.Text = "Selecione la imagen correspondiente \"Rio\"";
             // 
             // rbVolcano
             // 

@@ -36,7 +36,7 @@ namespace SaberApp
                 cbR3.SelectedIndex == -1 || cbR4.SelectedIndex == -1;
             if (verify != true)
             {
-                bool x = cbR1.SelectedIndex == 3 && cbR2.SelectedIndex == 0 && cbR3.SelectedIndex == 1 && cbR4.SelectedIndex == 3;
+                bool x = cbR1.SelectedIndex == 3 && cbR2.SelectedIndex == 0 && cbR3.SelectedIndex == 1 && cbR4.SelectedIndex == 2;
                 if (x == true)
                 {
                     Questions.correctas++;
@@ -44,7 +44,7 @@ namespace SaberApp
                 else
                 {
                     Questions.incorrectas++;
-                    Questions.setAnswer(2, false);
+                    Questions.setAnswer(8, false);
                 }
                 this.Hide();
                 timer1.Enabled = false;
